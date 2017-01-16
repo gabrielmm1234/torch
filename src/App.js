@@ -47,7 +47,7 @@ class App extends Component {
 
 const styles = {
 	headerContainer: {
-		paddingTop: 50,
+		paddingTop: 20,
 		flexDirection: 'row',
 		alignItems: 'flex-end',
 		justifyContent: 'space-between',
