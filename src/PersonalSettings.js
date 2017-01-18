@@ -40,6 +40,7 @@ class PersonalSettings extends Component {
 					<Text style={styles.textStyle}>Mesquita</Text>
 				</View>
 
+				<Text style={{fontFamily: 'Tungsten-Medium', color: 'white', fontSize: 30, alignSelf: 'center'}}>SETTINGS</Text>
 
 				<View style={styles.optionsContainer}>
 					<TouchableOpacity onPress={this.onProfileButtonPress.bind(this)}>
