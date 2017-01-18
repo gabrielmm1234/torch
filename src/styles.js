@@ -1,4 +1,26 @@
 const styles = {
+	profileItemStyle: {
+		fontFamily: 'Tungsten-Medium',
+		color: 'white',
+		fontSize: 25
+	},
+	profileItemContainer: {
+		flexDirection: 'row',
+		alignItems: 'center',
+		marginLeft: 20
+	},
+	profileLabelStyle: {
+		fontFamily: 'Tungsten-Medium',
+		color: 'white',
+		fontSize: 25,
+		paddingRight: 20
+	},
+	profileContainer: {
+		flex: 1,
+        flexDirection: 'column',
+        flexWrap: 'wrap',
+		paddingTop: 15
+	},
 	backIconStyle: {
 		paddingRight: 35
 	},
@@ -11,6 +33,7 @@ const styles = {
 	profileSettings: {
 		paddingLeft: 20,
 		paddingTop: 50,
+		paddingBottom: 50,
 		flexDirection: 'row',
 		alignItems: 'center',
 		justifyContent: 'flex-start'
