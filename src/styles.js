@@ -1,4 +1,20 @@
 const styles = {
+	backIconStyle: {
+		paddingRight: 35
+	},
+	profileSettingsTextStyle: {
+		fontFamily: 'Tungsten-Medium',
+		color: 'white',
+		fontSize: 30,
+		paddingLeft: 20
+	},
+	profileSettings: {
+		paddingLeft: 20,
+		paddingTop: 50,
+		flexDirection: 'row',
+		alignItems: 'center',
+		justifyContent: 'flex-start'
+	},
 	bottomOptionsContainer: {
 		flex: 1,
 		flexDirection: 'column',
