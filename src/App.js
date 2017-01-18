@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Scene, Router } from 'react-native-router-flux';
 import HomePage from './HomePage';
 import PersonalSettings from './PersonalSettings';
+import ProfileSettings from './ProfileSettings';
 
 class App extends Component {
 
@@ -14,6 +15,7 @@ class App extends Component {
 
 				<Scene key="PersonalSettings">
 					<Scene key="Settings" component={PersonalSettings} hideNavBar={true} initial={true} />
+					<Scene key="ProfileSettings" component={ProfileSettings} hideNavBar={true} />
 				</Scene>
 			</Router>
 		);
