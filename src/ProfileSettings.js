@@ -63,27 +63,27 @@ class ProfileSettings extends Component {
 
 					<ProfileItemContainer>
 						<ProfileLabel>LOCATION</ProfileLabel>
-						<Text style={[styles.profileItemStyle, {fontSize: 20}]}>Portland, OR USA</Text>
+						<ProfileItem>Portland, OR USA</ProfileItem>
 					</ProfileItemContainer>
 
 					<ProfileItemContainer>
 						<ProfileLabel>TORCH ID</ProfileLabel>
-						<Text style={[styles.profileItemStyle, {fontSize: 20}]}>@ripcityrebels</Text>
+						<ProfileItem>@ripcityrebels</ProfileItem>
 					</ProfileItemContainer>
 
 					<ProfileItemContainer>
 						<ProfileLabel>MOBILE</ProfileLabel>
-						<Text style={[styles.profileItemStyle, {fontSize: 20}]}>1 555 666 7777</Text>
+						<ProfileItem>1 555 666 7777</ProfileItem>
 					</ProfileItemContainer>
 
 					<ProfileItemContainer>
 						<ProfileLabel>EMAIL</ProfileLabel>
-						<Text style={[styles.profileItemStyle, {fontSize: 20}]}>gabrieljustware@gmail.com</Text>
+						<ProfileItem>gabrieljustware@gmail.com</ProfileItem>
 					</ProfileItemContainer>
 
 					<ProfileItemContainer>
 						<ProfileLabel>BIRTHDAY</ProfileLabel>
-						<Text style={[styles.profileItemStyle, {fontSize: 20}]}>04 january, 1996</Text>
+						<ProfileItem>04 january, 1996</ProfileItem>
 					</ProfileItemContainer>
 
 					<ProfileItemContainer>
@@ -93,12 +93,12 @@ class ProfileSettings extends Component {
 
 					<ProfileItemContainer>
 						<ProfileLabel>Height</ProfileLabel>
-						<Text style={[styles.profileItemStyle, {fontSize: 20}]}>6'2"</Text>
+						<ProfileItem>6'2"</ProfileItem>
 					</ProfileItemContainer>
 
 					<ProfileItemContainer>
 						<ProfileLabel>Weight</ProfileLabel>
-						<Text style={[styles.profileItemStyle, {fontSize: 20}]}>210 lbs</Text>
+						<ProfileItem>210 lbs</ProfileItem>
 					</ProfileItemContainer>
 				</View>
 
