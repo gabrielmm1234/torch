@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import { 
-	View, 
-	Text, 
-	Dimensions, 
-	TouchableHighlight, 
-	TouchableOpacity, 
-	Image 
+import {
+	View,
+	Text,
+	Dimensions,
+	TouchableHighlight,
+	TouchableOpacity,
+	Image
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Actions } from 'react-native-router-flux';
 import styles from './styles';
+import BackgroundImage from './components/BackgroundImage'
 
 var { width, height } = Dimensions.get('window');
 
@@ -26,7 +27,7 @@ class HomePage extends Component {
 
   	render() {
   		return (
-  			<Image source={require('../assets/basketball.jpg')} style={styles.backgroundImage}>
+  			<BackgroundImage>
 
 				<View style={styles.headerContainer}>
 					<Text style={[styles.headerTextStyle, styles.leftText]}>
@@ -50,7 +51,7 @@ class HomePage extends Component {
 	       			</TouchableHighlight>
        			</View>
 
-       		</Image>
+       		</BackgroundImage>
   		);
   	}
 }

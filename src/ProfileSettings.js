@@ -7,6 +7,11 @@ import {
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Actions } from 'react-native-router-flux';
 import styles from './styles';
+import BackgroundImage from './components/BackgroundImage';
+import ProfileLabel from './components/ProfileLabel';
+import ProfileItemContainer from './components/ProfileItemContainer';
+import ProfileItem from './components/ProfileItem';
+
 
 class ProfileSettings extends Component {
 

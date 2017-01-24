@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { 
-	View, 
+import {
+	View,
 	Text,
 	Image,
 	TouchableOpacity
@@ -8,7 +8,7 @@ import {
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Actions } from 'react-native-router-flux';
 import styles from './styles';
-
+import BackgroundImage from './components/BackgroundImage';
 
 class PersonalSettings extends Component {
 
@@ -22,7 +22,7 @@ class PersonalSettings extends Component {
 
 	render() {
 		return (
-			<Image source={require('../assets/basketball.jpg')} style={styles.backgroundImage}>
+			<BackgroundImage>
 
 				<View style={styles.headerContainer}>
 					<Text style={[styles.headerTextStyle, styles.leftText]}>
@@ -46,7 +46,7 @@ class PersonalSettings extends Component {
 					<TouchableOpacity onPress={this.onProfileButtonPress.bind(this)}>
 						<View style={styles.celContainer}>
 							<Icon name="user-circle" size={40} color="white" />
-							<Text style={styles.optionTextStyle}> 
+							<Text style={styles.optionTextStyle}>
 								Profile
 							</Text>
 						</View>
@@ -76,7 +76,7 @@ class PersonalSettings extends Component {
 					<Text style={styles.bottomOptionsText}>Sounds</Text>
 					<Text style={styles.bottomOptionsText}>Notifications</Text>
 				</View>
-			</Image>
+			</BackgroundImage>
 		);
 	}
 }
