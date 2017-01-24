@@ -52,52 +52,52 @@ class ProfileSettings extends Component {
 
 				<View style={styles.profileContainer}>
 					<ProfileItemContainer>
-						<Text style={styles.profileLabelStyle}>NAME</Text>
+						<ProfileLabel>NAME</ProfileLabel>
 						<Text style={[styles.textStyle, {fontSize: 40}]}>Gabriel Mesquita</Text>
 					</ProfileItemContainer>
 
 					<ProfileItemContainer>
-						<Text style={styles.profileLabelStyle}>NICKNAME</Text>
+						<ProfileLabel>NICKNAME</ProfileLabel>
 						<Text style={[styles.profileItemStyle, {color: 'grey', fontSize: 15}]}>Add A Nickname</Text>
 					</ProfileItemContainer>
 
 					<ProfileItemContainer>
-						<Text style={styles.profileLabelStyle}>LOCATION</Text>
+						<ProfileLabel>LOCATION</ProfileLabel>
 						<Text style={[styles.profileItemStyle, {fontSize: 20}]}>Portland, OR USA</Text>
 					</ProfileItemContainer>
 
 					<ProfileItemContainer>
-						<Text style={styles.profileLabelStyle}>TORCH ID</Text>
+						<ProfileLabel>TORCH ID</ProfileLabel>
 						<Text style={[styles.profileItemStyle, {fontSize: 20}]}>@ripcityrebels</Text>
 					</ProfileItemContainer>
 
 					<ProfileItemContainer>
-						<Text style={styles.profileLabelStyle}>MOBILE</Text>
+						<ProfileLabel>MOBILE</ProfileLabel>
 						<Text style={[styles.profileItemStyle, {fontSize: 20}]}>1 555 666 7777</Text>
 					</ProfileItemContainer>
 
 					<ProfileItemContainer>
-						<Text style={styles.profileLabelStyle}>EMAIL</Text>
+						<ProfileLabel>EMAIL</ProfileLabel>
 						<Text style={[styles.profileItemStyle, {fontSize: 20}]}>gabrieljustware@gmail.com</Text>
 					</ProfileItemContainer>
 
 					<ProfileItemContainer>
-						<Text style={styles.profileLabelStyle}>BIRTHDAY</Text>
+						<ProfileLabel>BIRTHDAY</ProfileLabel>
 						<Text style={[styles.profileItemStyle, {fontSize: 20}]}>04 january, 1996</Text>
 					</ProfileItemContainer>
 
 					<ProfileItemContainer>
-						<Text style={styles.profileLabelStyle}>Gender</Text>
+						<ProfileLabel>Gender</ProfileLabel>
 						<Text style={[styles.profileItemStyle, {color: 'grey', fontSize: 15}]}>Select</Text>
 					</ProfileItemContainer>
 
 					<ProfileItemContainer>
-						<Text style={styles.profileLabelStyle}>Height</Text>
+						<ProfileLabel>Height</ProfileLabel>
 						<Text style={[styles.profileItemStyle, {fontSize: 20}]}>6'2"</Text>
 					</ProfileItemContainer>
 
 					<ProfileItemContainer>
-						<Text style={styles.profileLabelStyle}>Weight</Text>
+						<ProfileLabel>Weight</ProfileLabel>
 						<Text style={[styles.profileItemStyle, {fontSize: 20}]}>210 lbs</Text>
 					</ProfileItemContainer>
 				</View>
