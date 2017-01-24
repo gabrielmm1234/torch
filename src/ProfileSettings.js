@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {
 	View,
 	Text,
-	Image,
 	TouchableOpacity
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -22,7 +21,7 @@ class ProfileSettings extends Component {
 
 	render() {
 		return (
-			<Image source={require('../assets/basketball.jpg')} style={styles.backgroundImage}>
+			<BackgroundImage>
 
 				<View style={styles.headerContainer}>
 
@@ -102,7 +101,7 @@ class ProfileSettings extends Component {
 					</ProfileItemContainer>
 				</View>
 
-			</Image>
+			</BackgroundImage>
 		);
 	}
 }
