@@ -8,12 +8,9 @@ import {
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Actions } from 'react-native-router-flux';
 import styles from './styles';
+import { Col, Row, Grid } from "react-native-easy-grid";
 
 class ProfileSettings extends Component {
-
-	onTorchIDPress() {
-  		Actions.HomePage();
-  	}
 
   	onBackPress() {
   		Actions.Settings();
@@ -30,11 +27,9 @@ class ProfileSettings extends Component {
 						<Icon name="flag" size={25} color="white" />   123 FANS
 					</Text>
 
-					<TouchableOpacity onPress={this.onTorchIDPress.bind(this)}>
-						<Text style={[styles.headerTextStyle, styles.rightText]}>
-							@gabrieljustware   <Icon name="user-circle" size={20} color="white" />
-						</Text>
-					</TouchableOpacity>
+					<Text style={[styles.headerTextStyle, styles.rightText]}>
+						@gabrieljustware   <Icon name="user-circle" size={20} color="white" />
+					</Text>
 
 				</View>
 
@@ -50,57 +45,105 @@ class ProfileSettings extends Component {
 					</Text>
 				</View>
 
-				<View style={styles.profileContainer}>
-					<View style={styles.profileItemContainer}>
-						<Text style={styles.profileLabelStyle}>NAME</Text>
-						<Text style={[styles.textStyle, {fontSize: 40}]}>Gabriel Mesquita</Text>
-					</View>
+				<Grid>
+					<Col style={{ width: 130 }}>
+						<Row size={10}>
+							<Text style={styles.profileLabelStyle}>NAME</Text>
+						</Row>
+						<Row size={10}>
+							<Text style={styles.profileLabelStyle}>NICKNAME</Text>
+						</Row>
+						<Row size={10}>
+							<Text style={styles.profileLabelStyle}>LOCATION</Text>
+						</Row>
+						<Row size={10}>
+							<Text style={styles.profileLabelStyle}>TORCH ID</Text>
+						</Row>
+						<Row size={10}>
+							<Text style={styles.profileLabelStyle}>MOBILE</Text>
+						</Row>
+						<Row size={10}>
+							<Text style={styles.profileLabelStyle}>EMAIL</Text>
+						</Row>
+						<Row size={10}>
+							<Text style={styles.profileLabelStyle}>BIRTHDAY</Text>
+						</Row>
+						<Row size={10}>
+							<Text style={styles.profileLabelStyle}>Gender</Text>
+						</Row>
+						<Row size={10}>
+							<Text style={styles.profileLabelStyle}>HEIGHT</Text>
+						</Row>
+						<Row size={10}>
+							<Text style={styles.profileLabelStyle}>WEIGHT</Text>
+						</Row>
+					</Col>
+    				<Col style={{ width: 160 }}>
+    					<Row size={10}>
+    						<Text style={[styles.textStyle, {fontSize: 35, paddingBottom: 10}]}>Gabriel Mesquita</Text>
+    					</Row>
+    					<Row size={10}>
+    						<Text style={[styles.profileItemStyle, {color: 'grey', fontSize: 20, paddingBottom: 10}]}>Add A Nickname</Text>
+    					</Row>
+    					<Row size={10}>
+    						<Text style={[styles.textStyle, {fontSize: 20, paddingBottom: 10}]}>Portland, OR USA</Text>
+    					</Row>
+    					<Row size={10}>
+    						<Text style={[styles.profileItemStyle, {color: 'grey', fontSize: 15, paddingBottom: 10}]}>@gabrieljustware</Text>
+    					</Row>
+    					<Row size={10}>
+    						<Text style={[styles.textStyle, {fontSize: 20, paddingBottom: 10}]}>1 555 666 7777</Text>
+    					</Row>
+    					<Row size={10}>
+    						<Text style={[styles.textStyle, {fontSize: 20, paddingBottom: 10}]}>gabrieljustware@gmail.com</Text>
+    					</Row>
+    					<Row size={10}>
+    						<Text style={[styles.textStyle, {fontSize: 20, paddingBottom: 10}]}>04 January, 1996</Text>
+    					</Row>
+    					<Row size={10}>
+    						<Text style={[styles.profileItemStyle, {color: 'grey', fontSize: 15, paddingBottom: 10}]}>Select</Text>
+    					</Row>
+    					<Row size={10}>
+    						<Text style={[styles.profileItemStyle, {fontSize: 20, paddingBottom: 10}]}>6'22"</Text>
+    					</Row>
+    					<Row size={10}>
+    						<Text style={[styles.profileItemStyle, {fontSize: 20, paddingBottom: 10}]}>210 lbs</Text>
+    					</Row>
+    				</Col>
 
-					<View style={styles.profileItemContainer}>
-						<Text style={styles.profileLabelStyle}>NICKNAME</Text>
-						<Text style={[styles.profileItemStyle, {color: 'grey', fontSize: 15}]}>Add A Nickname</Text>
-					</View>
-
-					<View style={styles.profileItemContainer}>
-						<Text style={styles.profileLabelStyle}>LOCATION</Text>
-						<Text style={[styles.profileItemStyle, {fontSize: 20}]}>Portland, OR USA</Text>
-					</View>
-
-					<View style={styles.profileItemContainer}>
-						<Text style={styles.profileLabelStyle}>TORCH ID</Text>
-						<Text style={[styles.profileItemStyle, {fontSize: 20}]}>@ripcityrebels</Text>
-					</View>
-
-					<View style={styles.profileItemContainer}>
-						<Text style={styles.profileLabelStyle}>MOBILE</Text>
-						<Text style={[styles.profileItemStyle, {fontSize: 20}]}>1 555 666 7777</Text>
-					</View>
-
-					<View style={styles.profileItemContainer}>
-						<Text style={styles.profileLabelStyle}>EMAIL</Text>
-						<Text style={[styles.profileItemStyle, {fontSize: 20}]}>gabrieljustware@gmail.com</Text>
-					</View>
-
-					<View style={styles.profileItemContainer}>
-						<Text style={styles.profileLabelStyle}>BIRTHDAY</Text>
-						<Text style={[styles.profileItemStyle, {fontSize: 20}]}>04 january, 1996</Text>
-					</View>
-
-					<View style={styles.profileItemContainer}>
-						<Text style={styles.profileLabelStyle}>Gender</Text>
-						<Text style={[styles.profileItemStyle, {color: 'grey', fontSize: 15}]}>Select</Text>
-					</View>
-
-					<View style={styles.profileItemContainer}>
-						<Text style={styles.profileLabelStyle}>Height</Text>
-						<Text style={[styles.profileItemStyle, {fontSize: 20}]}>6'2"</Text>
-					</View>
-
-					<View style={styles.profileItemContainer}>
-						<Text style={styles.profileLabelStyle}>Weight</Text>
-						<Text style={[styles.profileItemStyle, {fontSize: 20}]}>210 lbs</Text>
-					</View>
-				</View>
+    				<Col style={{ width: 60 }}>
+    					<Row size={10}>
+    						<Text style={[styles.profileItemStyle, {color: 'grey', fontSize: 20, paddingBottom: 10}]}></Text>
+    					</Row>
+    					<Row size={10}>
+    						<Text style={[styles.profileItemStyle, {color: 'grey', fontSize: 20, paddingBottom: 10}]}></Text>
+    					</Row>
+    					<Row size={10}>
+    						<Text style={[styles.profileItemStyle, {color: 'grey', fontSize: 20}]}>Public</Text>
+    					</Row>
+    					<Row size={10}>
+    						<Text style={[styles.profileItemStyle, {color: 'grey', fontSize: 20}]}>Public</Text>
+    					</Row>
+    					<Row size={10}>
+    						<Text style={[styles.profileItemStyle, {color: 'grey', fontSize: 20}]}>Always</Text>
+    					</Row>
+    					<Row size={10}>
+    						<Text style={[styles.profileItemStyle, {color: 'grey', fontSize: 20}]}>Private</Text>
+    					</Row>
+    					<Row size={10}>
+    						<Text style={[styles.profileItemStyle, {color: 'grey', fontSize: 20}]}>Private</Text>
+    					</Row>
+    					<Row size={10}>
+    						<Text style={[styles.profileItemStyle, {color: 'grey', fontSize: 20}]}>Public</Text>
+    					</Row>
+    					<Row size={10}>
+    						<Text style={[styles.profileItemStyle, {color: 'grey', fontSize: 20}]}>Public</Text>
+    					</Row>
+    					<Row size={10}>
+    						<Text style={[styles.profileItemStyle, {color: 'grey', fontSize: 20}]}>Public</Text>
+    					</Row>
+    				</Col>
+				</Grid>
 
 			</Image>
 		);

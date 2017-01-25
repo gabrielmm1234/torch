@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Scene, Router } from 'react-native-router-flux';
+import { Scene, Router, ActionConst } from 'react-native-router-flux';
 import HomePage from './HomePage';
 import PersonalSettings from './PersonalSettings';
 import ProfileSettings from './ProfileSettings';
@@ -9,7 +9,7 @@ class App extends Component {
 	render() {
 		return (
 			<Router>
-				<Scene key="HomePage">
+				<Scene key="HomePage" type={ActionConst.REPLACE}>
 					<Scene key="Home" component={HomePage} hideNavBar={true} initial={true} />
 				</Scene>
 

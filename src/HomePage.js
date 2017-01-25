@@ -16,7 +16,6 @@ var { width, height } = Dimensions.get('window');
 class HomePage extends Component {
 
 	onTorchIDPress() {
-  		console.log('Torch id pressed');
   		Actions.PersonalSettings();
   	}
 

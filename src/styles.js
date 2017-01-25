@@ -13,7 +13,9 @@ const styles = {
 		fontFamily: 'Tungsten-Medium',
 		color: 'white',
 		fontSize: 25,
-		paddingRight: 20
+		paddingRight: 20,
+		paddingLeft: 20,
+		paddingBottom: 20
 	},
 	profileContainer: {
 		flex: 1,
@@ -32,8 +34,8 @@ const styles = {
 	},
 	profileSettings: {
 		paddingLeft: 20,
-		paddingTop: 50,
-		paddingBottom: 50,
+		paddingTop: 40,
+		paddingBottom: 40,
 		flexDirection: 'row',
 		alignItems: 'center',
 		justifyContent: 'flex-start'
